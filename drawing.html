@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="stylesheet" type="text/css" href="css/main3.css">
+    <script type="text/javascript" src="js/prototype2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+
+<body>
+
+        <!--Navigation Header-->
+
+
+        <header>
+            <div id="navbar">
+                <div class="navbar active">
+                <a href='index.html'>
+                    <h1>George Rice-Smith</h1>
+                </a>
+                <div id="navbar-right">
+
+                        <a href='index.html'>
+                            <h2>Studio</h2>
+                        </a>
+                        <a href='painting.html'>
+                            <h2>Painting</h2>
+                        </a>
+                        <a href='drawing.html'>
+                            <h2>Drawing</h2>
+                        </a>
+                        <a href='contact.html'>
+                            <h2>Contact</h2>
+                        </a>
+                    <div id='menu-button'>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
+
+            <!--Content-->
+
+        <div class="content-wrapper">
+            <div class='page-title'>Drawing</div>
+
+            <!-- Control buttons -->
+
+           <div id="BtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"><h3>All</h3></button>
+                <button class="btn" onclick="filterSelection('alton')"><h3>Alton</h3></button>
+                <button class="btn" onclick="filterSelection('london')"><h3>London</h3></button>
+                <button class="btn" onclick="filterSelection('friends&models')"><h3>Friends & Models</h3></button>
+
+
+            <!--Photo Grid-->
+
+           <main class="container">
+                            <figure class="filterDiv classical archetypes 2020" >
+
+
+                                <img src="../../Images/Drawing/1.%20Grosvenor%20Square.jpg">
+                                <figcaption><h4>Echo and Narcissus. </h4>2020. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv abstract landscape">
+                                <img src="../../Images/Drawing/2.%20Chapman%20House%20Shadwell.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+                                <figcaption><h4>Southbank. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv archetypes imagination">
+                                <img src="../../Images/Drawing/London%20Eye,%20Southbank.jpg" class="hover-shadow" onclick="openModal();currentSlide(10)">
+                                <figcaption><h4>St. Sebastian. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv abstract landscape">
+                                <img src="../../Images/Drawing/Lincoln's%20Inn%20Fields.jpg" class="hover-shadow" onclick="openModal();currentSlide(4)">
+                                <figcaption><h4>Cliff. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv grotesque landscape">
+                                <img src="../../images/Drawing/Great%20Portland%20Street.jpg" class="hover-shadow" onclick="openModal();currentSlide(5)">
+                                <figcaption><h4>St. Jerome and Borris. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv archetypes classical landscape">
+                                <img src="../../images/Drawing/Trafalgar%20Square.jpg" class="hover-shadow" onclick="openModal();currentSlide(6)">
+                                <figcaption><h4>Fallen. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv abstract landscape">
+                                <img src="../../images/Drawing/The%20Ambassadors%20Theatre.jpg" class="hover-shadow" onclick="openModal();currentSlide(7)">
+                                <figcaption><h4>Trench. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv grotesque">
+                                <img src="../../images/drawing/Goods%20Way,%20Kings%20Cross.jpg"onclick="openModal();currentSlide(8)">
+                                <figcaption><h4>Wedding. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv grotesque">
+                                <img src="../../images/drawing/Shoreditch,%20Rhoda%20Street.jpg" class="hover-shadow" onclick="openModal();currentSlide(9)">
+                                <figcaption><h4>Back to the Sandcastle. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv abstract landscape">
+                                <img src="../../images/drawing/Sinking%20Canal%20Boat,%20Regents%20Canal.jpg" class="hover-shadow" onclick="openModal();currentSlide(3)">
+                                <figcaption><h4>Bedroom. </h4>strong>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv abstract landscape">
+                                <img src="../../images/drawing/Victoria%20Park.jpg" class="hover-shadow" onclick="openModal();currentSlide(11)">
+                                <figcaption><h4>Echo and Narcissus. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv classical archetypes">
+                                <img src="../../images/drawing/Xmas%20on%20S%20Molton%20Street,%20Mayfair.jpg" class="hover-shadow" onclick="openModal();currentSlide(12)">
+                                <figcaption><h4>Medieval Residue. </h4>2016. Oil on canvas. 70x50cm. £2,000.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv grotesque">
+                                <img src="../../images/drawing/Fieldgate%20Street,%20Whitechapel.jpg" class="hover-shadow" onclick="openModal();currentSlide(13)">
+                                <figcaption><h4>Throw the Dice. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv naive">
+                                <img src="../../images/drawing/Bocking%20Street,%20Mare%20Street.jpg" onclick="openModal();currentSlide(14)">
+                                <figcaption><h4>The Pet. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv naive archetypes">
+                                <img src="../../images/drawing/Charing%20Cross,%20Adelaide%20Street.jpg" onclick="openModal();currentSlide(15)">
+                                <figcaption><h4>Expulsion. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/drawing/St.%20Martins%20Ct.,%20Leicester%20Square.jpg" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Self-Portrait_Shadwell.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Henry_Whittling.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Mac.jpg" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Starbucks_Lady.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Will_Southbank.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Portrait_RDS.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Nude_RDS.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                            <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Nude_RDS_AP.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Sculpted. </h4>2016. Oil on Paper. 40 x 50cm.</figcaption>
+                            </figure>
+
+                <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Nude_RDS_TN.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Brick Lane. </h4>2016. Oil on Canvas. 155 x 200cm.</figcaption>
+                            </figure>
+
+                <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Reg_Dreaming.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Stubborn Habits. </h4>2016. Charcoal on Paper. 32 x 41cm.</figcaption>
+                            </figure>
+
+                <figure class="filterDiv poetic">
+                                <img src="../../images/Friends_and_Models/Shahim.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Journey Beyond the Gate. </h4>2016. Charcoal on Paper. 32 x 42cm.</figcaption>
+                            </figure>
+
+               <figure class="filterDiv poetic">
+                                <img src="../../images/Drawing/After_Fra_Angelico.jpg" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Stubborn Habits. </h4>2016. Charcoal on Paper. 32 x 41cm.</figcaption>
+                            </figure>
+
+                <figure class="filterDiv poetic">
+                                <img src="../../images/Drawing/After_Michelangelo.jpg" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Journey Beyond the Gate. </h4>2016. Charcoal on Paper. 32 x 42cm.</figcaption>
+                            </figure>
+
+               <figure class="filterDiv poetic">
+                                <img src="../../images/Drawing/After_Titian.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Stubborn Habits. </h4>2016. Charcoal on Paper. 32 x 41cm.</figcaption>
+                            </figure>
+
+                <figure class="filterDiv poetic">
+                                <img src="../../images/Drawing/Madonna_After_Titian.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+                                <figcaption><h4>Journey Beyond the Gate. </h4>2016. Charcoal on Paper. 32 x 42cm.</figcaption>
+                            </figure>
+
+            <!-- Modal/Lightbox -->
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-container">
+
+                    <div class="mySlides">
+                        <img src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                        <figcaption>
+                            <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+                        </figcaption>
+                        <div class="numbertext">1 / 20</div>
+                        <div class="close cursor" onclick="closeModal()">&times;</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="pics/Southbank.jpg">
+                        <figcaption>
+                            <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+                        </figcaption>
+                        <div class="numbertext">2 / 20</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="pics/Bedroom.jpg">
+                        <figcaption>
+                            <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+                        </figcaption>
+                        <div class="numbertext">3 / 20</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="pics/Cliff.jpg">
+                        <figcaption>
+                            <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+                        </figcaption>
+                        <div class="numbertext">4 / 20</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                        <figcaption>
+                            <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+                        </figcaption>
+                        <div class="numbertext">5 / 20</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                        <figcaption>
+                            <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+                        </figcaption>
+                        <div class="numbertext">6 / 20</div>
+                    </div>
+
+                    <!-- Next/Previous Controls -->
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption Text -->
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail Image Controls -->
+
+                    <div class="thumbnail-container">
+                        <ul class="thumbnail-list">
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(1)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(2)" src="pics/Southbank.jpg">
+                                </span>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(3)" src="pics/Bedroom.jpg">
+                                </span></li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(4)" src="pics/Cliff.jpg">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(5)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(6)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(7)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(8)" src="pics/Southbank.jpg">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(9)" src="pics/Bedroom.jpg">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(10)" alt="Cliffs" src="pics/Cliff.jpg">
+                                </span>
+                            </li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(11)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                                </span></li>
+
+                            <li>
+                                <span>
+                                    <img class="thumbnail-image" onclick="currentSlide(12)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                                </div>
+
+               </div>
+</main>
+
+
+
+</body>
+
+</html>

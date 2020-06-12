@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  
+    <!-- Everything else goes here. -->
+  </div><!-- .content-wrapper -->
+</body>
+</html>
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    
+    <title>George</title>
+</head>
+
+<body>
+    <div class="content-wrapper">
+    <div id="wrap">
+
+<!--Navigation Header-->
+        
+        <div id="navbar">
+  <a href="#default" id="logo">CompanyLogo</a>
+  <div id="navbar-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+<header>
+    <div class='container'>
+        <a href='index.html'><h1>George Rice-Smith</h1></h1></a>
+        <nav>
+            <ul id='desktop-menu'>
+                <a href='index.html'><li>Studio</li></a>
+                <a href='painting.html'><li>Painting</li></a>
+                <a href='drawing.html'><li>Drawing</li></a>
+                <a href='contact.html'><li>Contact</li></a>
+            </ul>
+        </nav>
+        <div id='menu-button'>
+        </div>
+    </div>
+    
+<!--Body-->   
+<body> 
+    <div class='page-title'><h2>Studio</h2></div>
+
+</body>
+</html>
+
+    
+<!--Photo Grid-->
+<container>
+    <div class="row">
+        <div class="column">
+            <figure><img src="Pics/Echo_and_Narcissus_and_Traveller.png" alt="Echo_and_Narcissus_and_Traveller" style="width:100%"> <figcaption>Echo and Narcissus, 2020.<br>Oil on canvas. 70x50cm. £2,000.</figcaption></figure>
+            <figure><img src="Pics/Southbank.jpg" style="width:100%">
+            <figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Bedroom.jpg" style="width:100%">
+            <figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Cliff.jpg" style="width:100%">
+            <figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+            <figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png" style="width:100%">
+            <figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+       </div>
+        <div class="column">
+            <figure><img src="Pics/Cliff.jpg" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Echo_and_Narcissus_and_Traveller.png" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Southbank.jpg" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Bedroom.jpg" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+       </div>
+        <div class="column">
+            
+            <figure><img src="Pics/Southbank.jpg" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Bedroom.jpg" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Cliff.jpg" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+            <figure><img src="Pics/Echo_and_Narcissus_and_Traveller.png" style="width:100%"><figcaption><strong>St. Jerome and Borris.</strong>2016.<br />Oil on Paper. 40 x 50cm.</figcaption></figure>
+       
+       </div>
+    </div>
+</container>
+</div>
+    
+</div><!-- .content-wrapper -->
+</body>
+        
+  
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="css/main3.css">
+  <script type="text/javascript" src="js/prototype2.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+
+<body>
+
+  <!--Navigation Header-->
+
+
+  <header>
+    <div id="navbar">
+      <div class="navbar active">
+        <a href='home.html'>
+          <h1>George Rice-Smith</h1>
+        </a>
+        <div id="navbar-right">
+          <a href='home.html'>
+            <h2>Home</h2>
+          </a>
+          <a href='studio.html'>
+            <h2>Studio</h2>
+          </a>
+          <a href='painting.html'>
+            <h2>Painting</h2>
+          </a>
+          <a href='drawing.html'>
+            <h2>Drawing</h2>
+          </a>
+          <a href='about.html'>
+            <h2>About</h2>
+          </a>
+          <div id='menu-button'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Content-->
+
+  <div class="content-wrapper">
+    <div class='page-title'>Home</div>
+
+    <!--Preview Gallery Grid-->
+
+    <div id="showcase-container">
+
+      <img class="showcase" src="../../Images/Studio/Musician_Boy_and_Girl_and_Burning_Tree.png">
+
+      <img class="showcase" src="../../images/Burning_Imprimatura.jpg">
+
+      <img class="showcase" src="../../images/Studio/Dreaming%20Boy.jpg">
+    </div>
+    <hr>
+
+      <div class='page-title'>Grotesque</div>
+
+    <div id="showcase-container">
+
+      <img class="showcase" src="../../Images/Studio/St._Sebastian.JPG">
+
+      <img class="showcase" src="../../images/Studio/Back_to_the_Sandcastle.JPG">
+
+      <img class="showcase" src="../../images/Studio/The_Wedding.JPG">
+    </div>
+    <hr>
+
+    <div class='page-title'>Painting</div>
+
+    <div id="showcase-container">
+
+      <img class="showcase" src="pics/Observation/_4036207%20(2).jpg" class="hover-shadow" onclick="openModal();currentSlide(1)">
+
+      <img class="showcase" src="../../Images/Life_Painting/Victoria_Park.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+
+      <img class="showcase" src="../../images/Life_Painting/Self-Portrait.jpg" class="hover-shadow" onclick="openModal();currentSlide(1)">
+    </div>
+
+      <hr>
+<div class='page-title'>Drawing</div>
+
+      <div id="showcase-container">
+
+        <img class="showcase" src="../../Images/Drawing/1.%20Grosvenor%20Square.jpg">
+
+        <img class="showcase" src="../../Images/Drawing/2.%20Chapman%20House%20Shadwell.jpg">
+
+        <img class="showcase" src="../../Images/Drawing/London%20Eye,%20Southbank.jpg">
+
+    </div>
+        <hr>
+
+        <!-- Modal/Lightbox -->
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-container">
+
+            <div class="mySlides">
+              <img src="Pics/Echo_and_Narcissus_and_Traveller.png">
+              <figcaption>
+                <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+              </figcaption>
+              <div class="numbertext">1 / 20</div>
+              <div class="close cursor" onclick="closeModal()">&times;</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="pics/Southbank.jpg">
+              <figcaption>
+                <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+              </figcaption>
+              <div class="numbertext">2 / 20</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="pics/Bedroom.jpg">
+              <figcaption>
+                <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+              </figcaption>
+              <div class="numbertext">3 / 20</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="pics/Cliff.jpg">
+              <figcaption>
+                <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+              </figcaption>
+              <div class="numbertext">4 / 20</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+              <figcaption>
+                <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+              </figcaption>
+              <div class="numbertext">5 / 20</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+              <figcaption>
+                <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+              </figcaption>
+              <div class="numbertext">6 / 20</div>
+            </div>
+
+            <!-- Next/Previous Controls -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption Text -->
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail Image Controls -->
+
+            <div class="thumbnail-container">
+              <ul class="thumbnail-list">
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(1)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(2)" src="pics/Southbank.jpg">
+                  </span>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(3)" src="pics/Bedroom.jpg">
+                  </span></li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(4)" src="pics/Cliff.jpg">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(5)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(6)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(7)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(8)" src="pics/Southbank.jpg">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(9)" src="pics/Bedroom.jpg">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(10)" alt="Cliffs" src="pics/Cliff.jpg">
+                  </span>
+                </li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(11)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                  </span></li>
+
+                <li>
+                  <span>
+                    <img class="thumbnail-image" onclick="currentSlide(12)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </main>
+
+      <footer>
+        © George Rice-Smith 2020
+
+      </footer>
+
+</body>
+
+
+</html>

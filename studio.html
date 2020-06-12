@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="css/main3.css">
+  <script type="text/javascript" src="js/prototype2.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+
+<body>
+
+  <!--Navigation Header-->
+
+
+  <header>
+    <div id="navbar">
+      <div class="navbar active">
+        <a href='index.html'>
+          <h1>George Rice-Smith</h1>
+        </a>
+        <input type="search" name="" value="">
+        <div id="navbar-right">
+          <a href='studio.html'>
+            <h2>Studio</h2>
+          </a>
+          <a href='painting.html'>
+            <h2>Painting</h2>
+          </a>
+          <a href='drawing.html'>
+            <h2>Drawing</h2>
+          </a>
+          <a href='about.html'>
+            <h2>About</h2>
+          </a>
+          <div id='menu-button'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Content-->
+
+  <div class="content-wrapper">
+    <div class='page-title'>
+      Studio
+    </div>
+
+    <!-- Control buttons -->
+
+    <div id="BtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        <h3>All</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('abstract')">
+        <h3>Abstract</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('classical')">
+        <h3>Classical</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('grotesque')">
+        <h3>Grotesque</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('naive')">
+        <h3>Naive</h3>
+      </button>
+    </div>
+
+    <!--Preview Gallery Grid-->
+
+    <main class="container">
+          <figure class="filterDiv classical archetypes 2020" alt="Echo and Narcissus </h4>2020. Oil on Canvas. 70 x 130cm" title="Echo & Narcissus">
+            <img src="../../Images/Studio/Musician_Boy_and_Girl_and_Burning_Tree.png" class="hover-shadow" onclick="openModal();currentSlide(1)">
+            <figcaption>
+              <label for="studio">
+                <h4>Echo and Narcissus </h4>2020. Oil on Canvas. 70 x 130cm
+              </label>
+            </figcaption>
+            <input type="checkbox" id="studio">
+          </figure>
+          <!--
+      <figure class="filterDiv abstract landscape">
+        <img src="../../Images/Black_imprimatura.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+        <figcaption>
+          <h4>Southbank </h4>2016. Oil on Paper. 40 x 50cm
+        </figcaption>
+      </figure>
+  -->
+
+          <figure class="filterDiv classical" alt="Burning Cathedral. 2019/20. Oil on Paper. 32 x 53cm." title="Burning">
+            <img src="../../images/Burning_Imprimatura.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+            <figcaption>
+              <h4>Burning Cathedral </h4>2019/20. Oil on Paper. 32 x 53cm.
+            </figcaption>
+            <input type="checkbox">
+          </figure>
+
+          <figure class="filterDiv abstract landscape">
+            <img src="../../images/gf.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+            <figcaption>
+              <h4>Prodigal Son </h4>2019. Oil on Canvas. 40 x 67cm
+            </figcaption>
+            <input type="checkbox">
+          </figure>
+
+     <!--
+      <figure class="filterDiv abstract landscape">
+        <img src="../../images/Studio/Southbank.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+        <figcaption>
+          <h4>Southbank. </h4>2016.<br>Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+   -->
+        <figure class="filterDiv archetypes imagination">
+          <img src="../../images/Studio/St._Sebastian.jpg" class="hover-shadow" onclick="openModal();currentSlide(10)">
+          <figcaption>
+            <h4>St. Sebastian </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv abstract landscape">
+          <img src="../../Images/Studio/Cliff.jpg" class="hover-shadow" onclick="openModal();currentSlide(4)">
+          <figcaption>
+            <h4>Cliff </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv grotesque landscape">
+          <img src="../../Images/Studio/St._Jerome_and_Borris.jpg" class="hover-shadow" onclick="openModal();currentSlide(10)">
+          <figcaption>
+            <h4>St. Jerome and Borris </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv archetypes classical landscape">
+          <img src="../../Images/Studio/Fallen.jpg" class="hover-shadow" onclick="openModal();currentSlide(6)">
+          <figcaption>
+            <h4>Fallen </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv abstract landscape">
+          <img src="../../Images/Studio/Trench.jpg" class="hover-shadow" onclick="openModal();currentSlide(7)">
+          <figcaption>
+            <h4>Trench </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv grotesque">
+          <img src="../../Images/Studio/The_Wedding.jpg" class="hover-shadow" onclick="openModal();currentSlide(8)">
+          <figcaption>
+            <h4>Wedding </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv grotesque">
+          <img src="../../Images/Studio/Back_to_the_Sandcastle.jpg" class="hover-shadow" onclick="openModal();currentSlide(9)">
+          <figcaption>
+            <h4>Back to the Sandcastle </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv abstract landscape">
+          <img src="../../Images/Studio/Bedroom.jpg" class="hover-shadow" onclick="openModal();currentSlide(3)">
+          <figcaption>
+            <h4>Bedroom </h4>strong>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv abstract landscape">
+          <img src="../../Images/Studio/Untitled.jpg" class="hover-shadow" onclick="openModal();currentSlide(11)">
+          <figcaption>
+            <h4>Echo and Narcissus </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv classical archetypes">
+          <img src="../../Images/Studio/Medieval_Residue.jpg" class="hover-shadow" onclick="openModal();currentSlide(12)">
+          <figcaption>
+            <h4>Medieval Residue </h4>2016. Oil on canvas. 70x50cm. £2,000
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv grotesque">
+          <img src="../../Images/Studio/Throw_the_Dice.jpg" class="hover-shadow" onclick="openModal();currentSlide(13)">
+          <figcaption>
+            <h4>Throw the Dice </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv naive">
+          <img src="../../Images/Studio/The_Pet.jpg" class="hover-shadow" onclick="openModal();currentSlide(14)">
+          <figcaption>
+            <h4>The Pet </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv naive archetypes">
+          <img src="../../Images/Studio/Expulsion.jpg" class="hover-shadow" onclick="openModal();currentSlide(15)">
+          <figcaption>
+            <h4>Expulsion </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Sculpted.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../images/studio/Lagoon.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../images/studio/Collapse.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../images/Studio/Dreaming%20Boy.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Shame.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Woman.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Crucifixion.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Musician.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../images/studio/Wishing.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Sculpted </h4>2016. Oil on Paper. 40 x 50cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Brick_Lane.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Brick Lane </h4>2016. Oil on Canvas. 155 x 200cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Stubborn_Habits.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Stubborn Habits </h4>2016. Charcoal on Paper. 32 x 41cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+        <figure class="filterDiv poetic">
+          <img src="../../Images/Studio/Journey_Beyond_the_Gate.jpg" class="hover-shadow" onclick="openModal();currentSlide(16)">
+          <figcaption>
+            <h4>Journey Beyond the Gate </h4>2016. Charcoal on Paper. 32 x 42cm
+          </figcaption>
+          <input type="checkbox" id="studio">
+        </figure>
+
+
+      <!-- Modal/Lightbox -->
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-container">
+
+          <div class="mySlides">
+            <img src="Pics/Echo_and_Narcissus_and_Traveller.png">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">1 / 20</div>
+            <div class="close cursor" onclick="closeModal()">&times;</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Southbank.jpg">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">2 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Bedroom.jpg">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">3 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Cliff.jpg">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">4 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">5 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">6 / 20</div>
+          </div>
+
+          <!-- Next/Previous Controls -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption Text -->
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail Image Controls -->
+
+          <div class="thumbnail-container">
+            <ul class="thumbnail-list">
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(1)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(2)" src="pics/Southbank.jpg">
+                </span>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(3)" src="pics/Bedroom.jpg">
+                </span></li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(4)" src="pics/Cliff.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(5)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(6)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(7)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(8)" src="pics/Southbank.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(9)" src="pics/Bedroom.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(10)" alt="Cliffs" src="pics/Cliff.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(11)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                </span></li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(12)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </main>
+
+  <footer>
+    © George Rice-Smith 2020
+
+  </footer>
+
+</body>
+
+
+</html>

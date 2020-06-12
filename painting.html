@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painting</title>
+  <link rel="stylesheet" type="text/css" href="css/main3.css">
+  <script type="text/javascript" src="js/prototype2.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+
+<body>
+
+  <!--Navigation Header-->
+
+
+  <header>
+    <div id="navbar">
+      <a href='index.html'>
+        <h1>George Rice-Smith</h1>
+      </a>
+      <div id="navbar-right">
+
+        <a href='index.html'>
+          <h2>Studio</h2>
+        </a>
+        <a href='painting.html'>
+          <h2>Painting</h2>
+        </a>
+        <a href='drawing.html'>
+          <h2>Drawing</h2>
+        </a>
+        <a href='contact.html'>
+          <h2>Contact</h2>
+        </a>
+        <div id='menu-button'>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Content-->
+
+  <div class="content-wrapper">
+    <div class='page-title'>Painting</div>
+    <!-- Control buttons -->
+
+    <div id="BtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        <h3>All</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('alton')">
+        <h3>Alton</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('london')">
+        <h3>London</h3>
+      </button>
+      <button class="btn" onclick="filterSelection('friends & models')">
+        <h3>Friends & Models</h3>
+      </button>
+
+    </div>
+
+    <!--Photo Grid-->
+
+    <main class="container">
+      <figure class="filterDiv Alton 2020">
+        <img src="pics/Observation/_4036207%20(2).jpg" class="hover-shadow" onclick="openModal();currentSlide(1)">
+        <figcaption>
+          <h4>Echo and Narcissus. </h4>2020. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv abstract landscape">
+        <img src="../../Images/Life_Painting/Victoria_Park.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+        <figcaption>
+          <h4>Southbank. </h4>2016. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv classical archetypes 2020">
+        <img src="../../images/Life_Painting/Self-Portrait.jpg" class="hover-shadow" onclick="openModal();currentSlide(1)">
+        <figcaption>
+          <h4>Echo and Narcissus. </h4>2020. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv alton">
+        <img src="../../Images/Life_Painting/Edge%20of%20Ackender%20Woods.JPG">
+        <figcaption>
+          <h4>Edge of Ackender Woods, Towards Beech. </h4>2019. Watercolor and whitening on paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv abstract landscape">
+        <img src="../../images/alton/Edge_of_Ackender_Woods_Towards_Hilltops.jpg">
+        <figcaption>
+          <h4>Southbank. </h4>2016. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv Alton">
+        <img src="Pics/Life_Painting/tumblr_ndp3zaAR301rmuaxuo1_500.jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+        <figcaption>
+          <h4>Southbank. </h4>2016. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv">
+        <img src="../../Images/Life_Painting/Madrid_Nude.jpg" class="hover-shadow" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>Madrid, Nude. </h4>2013. Oil on Paper. 45 x 22cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv abstract landscape">
+        <img src="../../Images/Life_Painting/Still-Life_Garden.jpg">
+        <figcaption>
+          <h4>Cliff. </h4>2016. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv London">
+        <img src="../../images/Life_Painting/dsc01201_3_orig%20(2).jpg" class="hover-shadow" onclick="openModal();currentSlide(2)">
+        <figcaption>
+          <h4>Southbank. </h4>2016. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv classical archetypes 2020">
+        <img src="../../images/Life_Painting/Moss_Portrait.jpg" class="hover-shadow" onclick="openModal();currentSlide(1)">
+        <figcaption>
+          <h4>Echo and Narcissus. </h4>2020. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv archetypes imagination">
+        <img src="../../images/Life_Painting/Portrait.jpg" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>St. Sebastian. </h4>2016. Oil on Paper. 40 x 50cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv alton">
+        <img src="../../Images/Life_Painting/Still-Life_Mirror.jpg">
+        <figcaption>
+          <h4>Still-Life with Mirror. </h4>2013. Oil on Canvas. 50 x 38cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv alton">
+        <img src="../../images/Life_Painting/Self-Portrait_2013.jpg" onclick="openModal();currentSlide(1)">
+        <figcaption>
+          <h4>Self-Portrait. </h4>2013. Oil on Board. 57 x 32cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv">
+        <img src="../../images/Life_Painting/Tuscany.jpg" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>Borgo Pignano, Tuscany </h4>2013. Oil on board. 28 x 38cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv">
+        <img src="../../images/Life_Painting/Chawton_Farm-Buildings.jpg" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>Borgo Pignano, Tuscany </h4>2013. Oil on board. 28 x 38cm.
+        </figcaption>
+      </figure>
+
+
+      <figure class="filterDiv">
+        <img src="../../images/Life_Painting/Still_Life_Window(2).jpg" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>Borgo Pignano, Tuscany </h4>2013. Oil on board. 28 x 38cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv">
+        <img src="../../images/Life_Painting/Dumfries_House_Bridge.jpg" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>Borgo Pignano, Tuscany </h4>2013. Oil on board. 28 x 38cm.
+        </figcaption>
+      </figure>
+
+      <figure class="filterDiv">
+        <img src="../../images/Life_Painting/dsc-0717-2-2_7_orig.jpg" onclick="openModal();currentSlide(10)">
+        <figcaption>
+          <h4>Borgo Pignano, Tuscany </h4>2013. Oil on board. 28 x 38cm.
+        </figcaption>
+      </figure>
+
+
+
+
+      <!-- Modal/Lightbox -->
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <img src="Pics/Echo_and_Narcissus_and_Traveller.png">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">1 / 20</div>
+            <div class="close cursor" onclick="closeModal()">&times;</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Southbank.jpg">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">2 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Bedroom.jpg">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">3 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Cliff.jpg">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">4 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">5 / 20</div>
+          </div>
+
+          <div class="mySlides">
+            <img src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+            <figcaption>
+              <h3>Echo and Narcissus</h3>2020.<br>Oil on canvas.<br>70x50cm.<br>£2,000.
+            </figcaption>
+            <div class="numbertext">6 / 20</div>
+          </div>
+
+          <!-- Next/Previous Controls -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption Text -->
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail Image Controls -->
+
+          <div class="thumbnail-container">
+            <ul class="thumbnail-list">
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(1)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(2)" src="pics/Southbank.jpg">
+                </span>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(3)" src="pics/Bedroom.jpg">
+                </span></li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(4)" src="pics/Cliff.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(5)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(6)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(7)" src="Pics/Echo_and_Narcissus_and_Traveller.png">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(8)" src="pics/Southbank.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(9)" src="pics/Bedroom.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(10)" alt="Cliffs" src="pics/Cliff.jpg">
+                </span>
+              </li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(11)" src="pics/Musician_Boy_and_Girl_and_Burning_Tree.png">
+                </span></li>
+
+              <li>
+                <span>
+                  <img class="thumbnail-image" onclick="currentSlide(12)" src="pics/Musician_Boy_and_Girl_and_Burning_Building.png">
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
